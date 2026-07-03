@@ -4,8 +4,7 @@ Public, rendered slide decks for John M. Drake, served via GitHub Pages at
 **https://jdrakephd.github.io/talks/**.
 
 Source `.qmd` files live in their respective (private) research repositories.
-This repo holds only the *rendered* output, so the research repos never need to
-be made public and the source is never duplicated here.
+This repo holds only the *rendered* output, as the research repos are not typically made public and the source is never duplicated here.
 
 ## Publish a new talk
 
