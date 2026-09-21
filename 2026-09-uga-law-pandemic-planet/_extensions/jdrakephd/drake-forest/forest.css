@@ -1,0 +1,117 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+/* ============================================================
+   FOREST.CSS — Ecology palette
+   Deep forest green with parchment accent. For teaching and
+   ecology-context talks (ECOL 8910, etc.).
+   Distinctive feel: warm, organic — italic headings, rounded
+   elements, generous list spacing for classroom readability.
+   ============================================================ */
+
+:root {
+  --bg:      #1a2a22;
+  --bg-alt:  #f1ece0;
+  --fg:      #e8e3d6;
+  --fg-alt:  #1a2a22;
+  --muted:   #8da095;
+  --accent:  #d6c79a;       /* parchment */
+  --rule:    rgba(232, 227, 214, 0.16);
+}
+
+/* --- Italic h2s — naturalist notebook feel --- */
+.reveal h2 {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* --- H3 as a warm muted label --- */
+.reveal h3 {
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.85em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* --- Wider list spacing for classroom legibility --- */
+.reveal li {
+  margin-bottom: 0.55em;
+  line-height: 1.5;
+}
+
+/* --- Bullet: parchment-colored dash --- */
+.reveal ul {
+  list-style-type: "- ";
+}
+.reveal ul li::marker {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* --- Title slide: left-aligned, organic feel --- */
+.reveal #title-slide h1.title {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.4em;
+}
+.reveal #title-slide .subtitle {
+  font-family: var(--serif);
+  font-style: normal;
+  font-size: 0.85em;
+  color: var(--accent);
+  border-left: 2px solid var(--accent);
+  padding-left: 0.6em;
+  display: inline-block;
+}
+
+/* --- Blockquote: warm, with rounded left border --- */
+.reveal blockquote {
+  border-left: 3px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+  background: rgba(214, 199, 154, 0.06);
+  padding: 0.5em 1em;
+}
+
+/* --- Code blocks: field-notebook style, rounded --- */
+.reveal pre {
+  border-left: 2px solid var(--accent);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.reveal code {
+  border-radius: 4px;
+}
+
+/* --- Divider: italic, understated --- */
+.reveal section.divider h1 {
+  font-size: 1.8em;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* --- Frosted caption: rounded, warmer tint --- */
+.reveal .frosted {
+  border-radius: 6px;
+  background: rgba(26, 42, 34, 0.55);
+  border-left: 2px solid var(--accent);
+}
+
+/* --- Figure slide: subtle green tint on light background --- */
+.reveal section.figure-slide {
+  background: #eee9dc;
+}
+
+/* --- Table: relaxed, teaching-friendly --- */
+.reveal table {
+  font-size: 0.8em;
+}
+.reveal table th {
+  text-transform: none;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}

@@ -1,0 +1,76 @@
+/* Deck-local title-slide adjustments (UGA Law, Sept 2026):
+   keep the event name on one line and give the right column
+   room so "University of Georgia School of Law" doesn't wrap. */
+.reveal #title-slide .title-meta-right {
+  flex-shrink: 0;
+}
+.reveal #title-slide .event {
+  white-space: nowrap;
+}
+
+/* Image credits: small and unobtrusive. Applies to the full-image photo
+   labels and to any caption additionally tagged .credit. */
+.reveal section.full-image .full-image-label {
+  font-size: 0.6em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.reveal p.caption.credit,
+.reveal .frosted .caption {
+  font-size: 0.5em;
+  opacity: 0.65;
+}
+
+/* Full-image label used as a slide title (opt-in via .label-title on the
+   slide): the caption line stays at display size; only the .credit span
+   drops to credit size. */
+.reveal section.full-image.label-title .full-image-label {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.9);
+}
+.reveal section.full-image.label-title .full-image-label p {
+  margin: 0;
+}
+.reveal section.full-image.label-title .full-image-label .credit {
+  font-size: 0.45em;
+  opacity: 0.7;
+}
+
+/* Frosted overlay (closing slide): sit at the bottom of the frame, over
+   the water, in the deck's serif rather than the default sans. */
+.reveal .frosted {
+  position: absolute;
+  bottom: 0.4em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 80%;
+  text-align: center;
+  font-family: var(--serif);
+  font-size: 0.75em;
+}
+.reveal .frosted p {
+  margin: 0.25em 0;
+}
+
+/* Subheadings (###): the burgundy skin's small-caps read as shouting;
+   use the base theme's quiet italic instead. */
+.reveal h3 {
+  font-variant: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* Full-image label, bottom variant (opt-in via .label-bottom): anchor at
+   the bottom edge (smaller, credit-line style) so it doesn't obscure the
+   photo subject. Other full-image slides keep the theme's top placement. */
+.reveal section.full-image.label-bottom .full-image-label {
+  top: auto;
+  bottom: 0.3em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+}

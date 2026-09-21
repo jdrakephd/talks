@@ -1,0 +1,8 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+:root {
+  --primary:       #e76f51;
+  --primary-light: rgba(231,111,81,0.08);
+  --primary-muted: rgba(231,111,81,0.5);
+}

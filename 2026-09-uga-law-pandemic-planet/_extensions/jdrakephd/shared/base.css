@@ -1,0 +1,501 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+/* ============================================================
+   BASE.CSS — Drake Presentation System
+   Shared typography, layout, and components.
+   Color skins (navy/charcoal/burgundy/forest) override the
+   variables defined in :root below.
+   ============================================================ */
+
+/* ---- Typography ---- */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+
+/* ---- Default variables (overridden by skins) ---- */
+:root {
+  --bg:            #1a1a1a;
+  --bg-alt:        #232323;       /* light figure-slide background */
+  --fg:            #ececec;
+  --fg-alt:        #1a1a1a;       /* text on bg-alt */
+  --muted:         #a0a0a0;
+  --accent:        #c9a96e;
+  --rule:          rgba(236, 236, 236, 0.18);
+
+  --serif:         'EB Garamond', Garamond, Georgia, serif;
+  --sans:          'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ============================================================
+   Reveal.js root surfaces
+   ============================================================ */
+.reveal-viewport,
+.reveal {
+  background: var(--bg);
+}
+
+.reveal {
+  font-family: var(--serif);
+  font-size: 30px;
+  color: var(--fg);
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+/* ---- Optional large-room legibility adjustments ----
+   Set in YAML with: body-classes: projector-body-strong
+   or:                body-classes: projector-body-sans */
+body.projector-body-strong .reveal {
+  font-weight: 500;
+}
+body.projector-body-sans .reveal {
+  font-family: var(--sans);
+  font-weight: 450;
+  letter-spacing: 0;
+}
+body.projector-body-sans .reveal h1,
+body.projector-body-sans .reveal h2,
+body.projector-body-sans .reveal h3,
+body.projector-body-sans .reveal h4,
+body.projector-body-sans .reveal #title-slide .subtitle,
+body.projector-body-sans .reveal #title-slide .title-meta-left,
+body.projector-body-sans .reveal #title-slide .title-meta-right {
+  font-family: var(--sans);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides > section {
+  padding: 0;
+}
+
+/* ============================================================
+   Headings — restrained, no caps, generous leading
+   ============================================================ */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--fg);
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.15;
+  margin: 0 0 0.6em 0;
+}
+
+.reveal h1 { font-size: 2.4em; }
+.reveal h2 { font-size: 1.6em; }
+.reveal h3 { font-size: 1.25em; font-style: italic; font-weight: 400; color: var(--muted); }
+.reveal h4 { font-size: 1.0em;  font-weight: 500; }
+
+/* ============================================================
+   Body text and lists
+   ============================================================ */
+.reveal p {
+  line-height: 1.45;
+  margin: 0 0 0.7em 0;
+}
+
+.reveal ul,
+.reveal ol {
+  display: block;
+  margin: 0.4em 0 0.4em 1.2em;
+  padding: 0;
+}
+
+.reveal li {
+  line-height: 1.4;
+  margin-bottom: 0.35em;
+}
+
+.reveal ul li::marker {
+  color: var(--accent);
+}
+
+.reveal em { font-style: italic; }
+.reveal strong { font-weight: 600; color: var(--accent); }
+
+/* ============================================================
+   Links
+   ============================================================ */
+.reveal a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 120ms ease;
+}
+.reveal a:hover { border-bottom-color: var(--accent); }
+
+/* ============================================================
+   Code (inline + blocks) — sans, subdued
+   ============================================================ */
+.reveal code {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.85em;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+.reveal pre {
+  font-size: 0.55em;
+  line-height: 1.35;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 2px solid var(--accent);
+  padding: 0.6em 0.9em;
+}
+.reveal pre code { background: transparent; padding: 0; }
+
+/* ============================================================
+   Blockquote — italic serif, accent rule
+   ============================================================ */
+.reveal blockquote {
+  font-style: italic;
+  font-size: 1.05em;
+  border-left: 2px solid var(--accent);
+  padding: 0.2em 0 0.2em 1em;
+  margin: 0.6em 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--fg);
+}
+
+/* ============================================================
+   Title slide
+   ============================================================ */
+.reveal #title-slide {
+  text-align: center;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100%;
+}
+.reveal #title-slide h1.title {
+  font-size: 2.6em;
+  font-weight: 500;
+  margin-bottom: 0.25em;
+}
+.reveal #title-slide .subtitle {
+  font-family: var(--serif);
+  font-size: 0.9em;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+  margin-bottom: 1.4em;
+}
+/* ---- Two-column metadata layout ---- */
+.reveal #title-slide .title-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: auto;
+  padding-bottom: 0.5em;
+}
+.reveal #title-slide .title-meta-left,
+.reveal #title-slide .title-meta-right {
+  font-family: var(--serif);
+  color: var(--muted);
+  margin: 0;
+  text-align: left;
+}
+.reveal #title-slide .title-meta-right {
+  text-align: right;
+}
+.reveal #title-slide .title-meta p {
+  margin: 0.2em 0;
+}
+
+/* ---- Left column: author + institute ---- */
+.reveal #title-slide .author {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--fg);
+}
+.reveal #title-slide .institute {
+  font-size: 0.6em;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ---- Right column: event + location + date ---- */
+.reveal #title-slide .event {
+  font-size: 0.65em;
+  color: var(--accent);
+  font-weight: 500;
+}
+.reveal #title-slide .location {
+  font-size: 0.55em;
+  font-style: italic;
+  color: var(--muted);
+}
+.reveal #title-slide .date {
+  font-size: 0.55em;
+  color: var(--muted);
+}
+
+/* ============================================================
+   Figure layout — pure white background for pre-made figures
+   Use: ## My slide {.figure}
+   ============================================================ */
+.reveal .backgrounds .slide-background.figure {
+  background: #ffffff !important;
+}
+.reveal section.figure {
+  background: transparent;
+  color: var(--bg);
+}
+.reveal section.figure h1,
+.reveal section.figure h2,
+.reveal section.figure h3,
+.reveal section.figure h4 {
+  color: var(--bg);
+}
+.reveal section.figure h3 { color: #555; }
+.reveal section.figure .caption,
+.reveal section.figure figcaption {
+  color: #666;
+}
+.reveal section.figure blockquote { color: var(--bg); }
+
+/* ============================================================
+   Figure-dark layout — theme background for transparent figures
+   Use: ## My slide {.figure-dark}
+   For figures drawn in light colors on transparent backgrounds.
+   Uses the theme's dark background so figures render naturally.
+   ============================================================ */
+.reveal section.figure-dark {
+  background: var(--bg);
+}
+.reveal section.figure-dark h2 {
+  color: var(--accent);
+  font-size: 1.2em;
+}
+.reveal section.figure-dark .caption,
+.reveal section.figure-dark figcaption {
+  color: var(--muted);
+}
+
+/* ============================================================
+   Frosted caption — for text overlay on background images
+   Use: <div class="frosted">caption text</div>
+   ============================================================ */
+.reveal .frosted {
+  display: inline-block;
+  background: rgba(20, 20, 20, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 0.6em 0.9em;
+  border-radius: 2px;
+  font-family: var(--sans);
+  font-size: 0.7em;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  max-width: 70%;
+}
+
+/* ============================================================
+   Small caption / source line — sans, muted
+   Use: <p class="caption">Source: ...</p>
+   ============================================================ */
+.reveal .caption,
+.reveal figcaption {
+  font-family: var(--sans);
+  font-size: 0.55em;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  margin-top: 0.3em;
+}
+
+/* ============================================================
+   Section divider slide
+   Use: # Section name {.divider}
+   ============================================================ */
+.reveal section.divider {
+  text-align: center;
+}
+.reveal section.divider h1 {
+  font-size: 2.0em;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent);
+}
+/* Optional appendix marker: # Backup {.divider .backup} */
+.reveal section.backup {
+  position: relative;
+}
+.reveal section.backup::after {
+  content: "Backup";
+  position: absolute;
+  right: 0.8em;
+  bottom: 0.5em;
+  font-family: var(--sans);
+  font-size: 0.35em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* ============================================================
+   Transition slide — inverted color scheme
+   Use: # Section name {.transition}
+   Optional subtitle as plain paragraph text below the heading.
+   ============================================================ */
+/* Background layer — fills the full viewport */
+.reveal .backgrounds .slide-background.transition {
+  background: var(--accent) !important;
+}
+/* Content layer — transparent so background shows through */
+.reveal section.transition {
+  background: transparent;
+  text-align: center;
+}
+.reveal section.transition h1 {
+  font-size: 2.2em;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--bg);
+}
+.reveal section.transition p {
+  font-family: var(--sans);
+  font-size: 0.75em;
+  color: var(--bg);
+  opacity: 0.7;
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   Tables — minimal rules, serif
+   ============================================================ */
+.reveal table {
+  font-size: 0.75em;
+  border-collapse: collapse;
+  margin: 0.5em 0;
+}
+.reveal table th {
+  font-family: var(--sans);
+  font-size: 0.85em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.4em 0.8em 0.4em 0;
+  text-align: left;
+}
+.reveal table td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.4em 0.8em 0.4em 0;
+}
+
+/* ============================================================
+   Slide number + progress — subtle
+   ============================================================ */
+.reveal .slide-number {
+  font-family: var(--sans);
+  font-size: 0.55em;
+  color: var(--muted);
+  background: transparent;
+  letter-spacing: 0.05em;
+}
+.reveal .progress { color: var(--accent); }
+
+/* ============================================================
+   Footer — persistent sharing/attribution line
+   Set via YAML: footer: "📷 Photos OK · 🔗 Social sharing OK"
+   ============================================================ */
+.reveal .footer {
+  font-family: var(--sans);
+  font-size: 0.4em;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* ============================================================
+   Figures — Quarto layout helpers
+   ============================================================ */
+.reveal .quarto-figure { margin: 0.4em 0; }
+.reveal .quarto-figure img {
+  max-height: 70vh;
+  width: auto;
+}
+
+/* ============================================================
+   Full-bleed image slide label
+   Use: ## {.full-image background-image="..."}
+   ============================================================ */
+.reveal section.full-image .full-image-label {
+  position: absolute;
+  top: 0.15em;
+  left: 25%;
+  font-family: var(--serif);
+  font-size: 1.6em;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.01em;
+}
+
+/* ============================================================
+   Watermark slide — faded background image behind content
+   Use: ## Slide title {.watermark background-image="img.png"}
+   Reveal.js handles the background-image attribute natively.
+   This class just ensures content remains legible over it.
+   ============================================================ */
+.reveal section.watermark {
+  background-color: transparent;
+}
+.reveal section.watermark h1,
+.reveal section.watermark h2 {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+.reveal section.watermark p,
+.reveal section.watermark li {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================
+   Collaborators slide — circular portraits with names
+   Use: ## Collaborators {.collaborators}
+        ::: {.person}
+        ![](photo.jpg)
+        Name Here
+        :::
+   ============================================================ */
+.reveal section.collaborators .people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2em 2em;
+  margin-top: 0.6em;
+}
+.reveal section.collaborators .person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 130px;
+}
+.reveal section.collaborators .person img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  margin-bottom: 0.4em;
+}
+.reveal section.collaborators .person p {
+  font-family: var(--sans);
+  font-size: 0.45em;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.25;
+  margin: 0;
+}

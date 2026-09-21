@@ -1,0 +1,84 @@
+% Drake academic Beamer base styling
+\usepackage{xcolor}
+\usepackage{etoolbox}
+
+\providecolor{drakeBg}{HTML}{1A1A1A}
+\providecolor{drakeBgAlt}{HTML}{232323}
+\providecolor{drakeFg}{HTML}{ECECEC}
+\providecolor{drakeFgAlt}{HTML}{1A1A1A}
+\providecolor{drakeMuted}{HTML}{A0A0A0}
+\providecolor{drakeAccent}{HTML}{C9A96E}
+
+\mode<presentation>{
+  \usetheme{default}
+  \setbeamertemplate{navigation symbols}{}
+}
+
+\setbeamercolor{normal text}{fg=drakeFg,bg=drakeBg}
+\setbeamercolor{background canvas}{bg=drakeBg}
+\setbeamercolor{frametitle}{fg=drakeAccent,bg=drakeBg}
+\setbeamercolor{title}{fg=drakeFg}
+\setbeamercolor{subtitle}{fg=drakeMuted}
+\setbeamercolor{author}{fg=drakeFg}
+\setbeamercolor{institute}{fg=drakeMuted}
+\setbeamercolor{date}{fg=drakeMuted}
+\setbeamercolor{structure}{fg=drakeAccent}
+\setbeamercolor{itemize item}{fg=drakeAccent}
+\setbeamercolor{itemize subitem}{fg=drakeAccent}
+\setbeamercolor{block title}{fg=drakeFg,bg=drakeBgAlt}
+\setbeamercolor{block body}{fg=drakeFg,bg=drakeBgAlt}
+\setbeamercolor{footline}{fg=drakeMuted,bg=drakeBg}
+
+\setbeamerfont{title}{family=\rmfamily,series=\bfseries,size=\LARGE}
+\setbeamerfont{subtitle}{family=\rmfamily,size=\large,shape=\itshape}
+\setbeamerfont{frametitle}{family=\rmfamily,series=\bfseries,size=\Large}
+\setbeamerfont{author}{family=\rmfamily,series=\bfseries,size=\normalsize}
+\setbeamerfont{institute}{family=\rmfamily,size=\small,shape=\itshape}
+\setbeamerfont{date}{family=\rmfamily,size=\small}
+\setbeamerfont{footline}{family=\sffamily,size=\scriptsize}
+
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{itemize item}{\color{drakeAccent}$\bullet$}
+\setbeamertemplate{itemize subitem}{\color{drakeAccent}$\bullet$}
+
+\newcommand{\drakeevent}{}
+\newcommand{\drakelocation}{}
+$if(event)$\renewcommand{\drakeevent}{$event$}$endif$
+$if(location)$\renewcommand{\drakelocation}{$location$}$endif$
+
+\setbeamertemplate{title page}{%
+  \begin{minipage}[t][\paperheight]{\textwidth}
+    \vspace*{0.15\paperheight}
+    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+    $if(subtitle)$
+    \vspace{0.35em}
+    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+    $endif$
+    \vfill
+    {\usebeamerfont{author}\insertauthor\par}
+    $if(institute)$
+    {\usebeamerfont{institute}\insertinstitute\par}
+    $endif$
+    $if(event)$
+    \vspace{0.65em}
+    {\color{drakeAccent}\small\drakeevent\par}
+    $endif$
+    $if(location)$
+    {\usebeamerfont{institute}\drakelocation\par}
+    $endif$
+    {\usebeamerfont{date}\insertdate\par}
+    \vspace*{0.05\paperheight}
+  \end{minipage}
+}
+
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.95\paperwidth,ht=2.6ex,dp=1.2ex,leftskip=1em]{footline}%
+      \usebeamerfont{footline}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.05\paperwidth,ht=2.6ex,dp=1.2ex,rightskip=.8em]{footline}%
+      \usebeamerfont{footline}\hfill\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}%
+  }
+}

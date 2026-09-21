@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="uga-law-pandemic-planet_files/libs/clipboard/clipboard.min.js"></script>
+<script src="uga-law-pandemic-planet_files/libs/quarto-html/tabby.min.js"></script>
+<script src="uga-law-pandemic-planet_files/libs/quarto-html/popper.min.js"></script>
+<script src="uga-law-pandemic-planet_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="uga-law-pandemic-planet_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="uga-law-pandemic-planet_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="uga-law-pandemic-planet_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <meta name="author" content="John M. Drake">
+  <meta name="dcterms.date" content="2026-09-21">
+  <title>Pandemic Planet</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="uga-law-pandemic-planet_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="uga-law-pandemic-planet_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="uga-law-pandemic-planet_files/libs/revealjs/dist/theme/quarto-b08007e59f35bc91a58e7495b100474d.css">
+  <link rel="stylesheet" href="title-slide-tweaks.css">
+  <link href="uga-law-pandemic-planet_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="uga-law-pandemic-planet_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="uga-law-pandemic-planet_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="uga-law-pandemic-planet_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <h1 class="title">Pandemic Planet</h1>
+  <p class="subtitle">Globalization, Global Change, and Emerging Infectious Diseases</p>
+  <div class="title-meta">
+    <div class="title-meta-left">
+      <p class="author">John M. Drake</p>
+      <p class="institute">Odum School of Ecology &amp; Center for the Ecology of Infectious Diseases</p>
+      <p class="institute">University of Georgia</p>
+    </div>
+    <div class="title-meta-right">
+      <p class="event">University of Georgia School of Law</p>
+      <p class="location">Athens, Georgia</p>
+      <p class="date">September 21, 2026</p>
+    </div>
+  </div>
+</section>
+<section id="section" class="slide level2 full-image label-bottom" data-background-image="figures/jeppes-reef.png" data-background-size="cover" data-background-position="center">
+<h2></h2>
+<div class="full-image-label">
+<p>The Matsamo border post at Jeppes Reef, Eswatini. Image: Wikimedia Commons</p>
+</div>
+<aside class="notes">
+<p>On the sixth of March, 2020, a nurse in a white coat raised a thermometer to my forehead at a border post in Eswatini and wrote my name — by hand — in a small ledger.</p>
+<p>This is that border post: Matsamo, near the town of Jeppes Reef. Eswatini is a small, landlocked kingdom in southern Africa — larger than Connecticut but smaller than New Jersey — a country of mountains and forests, sugar fields and sawmills, where trade and agriculture remain the backbone of daily life for its 1.2 million people.</p>
+<p>I crossed into Eswatini that day on my way to Johannesburg for a flight home after a conference in Kruger National Park. The border post was relatively quiet — a long roof built to clear lorries, a row of low offices painted red, a handful of travelers waiting in the heat.</p>
+<p>When my turn came, the nurse took my temperature and recorded my name in her ledger. It was an earnest, improvised gesture of vigilance at the very moment global air traffic was days away from collapsing. What, realistically, could that notebook do?</p>
+<p>And yet that moment captures something essential. It was a prelude to the weeks ahead: a collision between local resolve and a world already woven together by dense networks of mobility. The thermometer, the pencil, and the ledger are a metaphor for the limits of localized response in an era when pathogens move at the speed of global systems. That tension — between the intimate and the planetary — is the thread running through this entire talk, and through the book it comes from.</p>
+<p>[1.8 min | ends ~2:18]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-world-poised-on-edge" class="slide level2 figure">
+<h2>A world poised on edge</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/brockmann-network.png" class="quarto-figure quarto-figure-center" height="440"></p>
+</figure>
+</div>
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/brockmann-scatter.png" class="quarto-figure quarto-figure-center" height="440"></p>
+</figure>
+</div>
+</div></div>
+<p class="caption">
+Left: the shortest-path network from Hong Kong to 4,069 world airports. Right: epidemic arrival time is almost perfectly linear in <em>effective distance</em> on that network. Source: Brockmann &amp; Helbing (2013) <em>Science</em> 342: 1337–1342.
+</p>
+<aside class="notes">
+<p>Why couldn’t the ledger work? Because by 2020, the basic geometry of risk had changed.</p>
+<p>In 2013, Dirk Brockmann and Dirk Helbing demonstrated this with unusual clarity. Using global airline data, they showed that contagion in a connected world follows effective distance, not geographic distance. Cities separated by thousands of kilometers may be only one or two “steps” apart in terms of mobility flux. On this map, the distance from Hong Kong to London is not ten thousand kilometers; it is one step.</p>
+<p>When SARS-CoV-2 emerged, it was a probe revealing the structural properties of a hyperconnected world. Its rapid spread was not the failure of any single sector — not health, nor transportation, nor governance — but the signature of a tightly coupled system in which local shocks are transmitted quickly and widely.</p>
+<p>The lesson is not that globalization is inherently risky, but that certain forms of connectivity transform the kinds of risks we face. That is the claim I want to develop today.</p>
+<p><em>But before we go further, we should pause on a deceptively simple question.</em></p>
+<p>[1.2 min | ends ~3:29]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-a-pandemic" class="slide level2">
+<h2>What is a pandemic?</h2>
+<p><strong>Etymological</strong> — <em>pan</em> + <em>demos</em>: a disease “of all the people”</p>
+<p><strong>Epidemiological</strong> — outbreak → epidemic → pandemic: scale, distribution, sustained transmission</p>
+<p><strong>Institutional</strong> — the PHEIC: “an extraordinary event which constitutes a public health risk to other states through the international spread of disease”</p>
+<aside class="notes">
+<p>What is a pandemic? We use the term casually, but its meaning is not stable. It sits at the intersection of language, epidemiology, and politics — which is why I want to dwell on it for a moment.</p>
+<p>Etymologically, the word comes from Greek: demos — the people — and pan — all. A pandemic is, literally, a disease “of all the people.”</p>
+<p>In epidemiology, we define the terms outbreak, epidemic, and pandemic by scale: an outbreak is local and short-lived; an epidemic involves sustained transmission and demands a public health response; a pandemic crosses national or continental boundaries and requires international coordination. But the categories are porous — there is no consensus on when an epidemic becomes a pandemic. The transition is less a scientific boundary than a shift in recognition: the moment when “their problem” becomes “our problem.”</p>
+<p>To formalize that recognition, we built institutions. The most important is the Public Health Emergency of International Concern, created in the 2005 revision of the International Health Regulations. In principle a PHEIC is an alarm bell. In practice it is also political: declaring one can move markets, close borders, and reshape diplomatic relationships. It has been invoked only nine times — for H1N1, polio, Ebola three times, most recently for the current outbreak in the Democratic Republic of the Congo, Zika, COVID-19, and mpox twice. Each declaration is a negotiation between evidence and consequence.</p>
+<p>So a pandemic is not just when a disease goes global. It is when we can no longer deny our interconnectedness. Naming is a form of power: it defines responsibility, visibility, and urgency.</p>
+<p>[1.8 min | ends ~5:16]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section>
+<section id="a-century-of-pandemics" class="title-slide slide level1 divider center">
+<h1>A century of pandemics</h1>
+<aside class="notes">
+<p><em>So let’s look at the record. What have the pandemics of the last hundred years actually been like?</em></p>
+<p>[0.1 min | ends ~5:23]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-1" class="slide level2 full-image label-title" data-background-image="figures/camp-funston.png" data-background-size="cover" data-background-position="center">
+<h2></h2>
+<div class="full-image-label">
+<p>Emergency hospital during the influenza pandemic, Camp Funston, Kansas</p>
+<p><span class="credit">Image: Wikimedia Commons</span></p>
+</div>
+<aside class="notes">
+<p>Almost every history of modern pandemics begins here. In the spring of 1918, an unusual influenza A virus — an H1N1 — began circulating among military camps in the United States and Europe, just as the armies of the First World War were mobilizing for their final campaigns. That designation, H1N1, refers to the two proteins studding the surface of the virus: hemagglutinin, which lets the virus enter a cell, and neuraminidase, which lets new copies escape it — and each comes in many subtypes, most of them circulating in wild birds. Because the influenza genome is carried on eight separate segments, two viruses infecting the same host can shuffle those segments and produce something entirely new — a process called reassortment, and it runs through this whole history.</p>
+<p>The first wave caused extensive illness but modest mortality. Then, beginning in August 1918, a far more lethal second wave swept cities across four continents, and a third wave followed in 1919.</p>
+<p>The origin of the 1918 virus remains unresolved, but the scale of mortality was unprecedented. An estimated 500 million people — one-third of the global population at the time — were infected, and 50 to 100 million died. In the United States, life expectancy fell by more than twelve years in a single year, the steepest decline ever recorded.</p>
+<p>For our purposes, 1918 stands as the benchmark for global infectious-disease shocks: extraordinary spatial reach, rapid transcontinental spread accelerated by wartime troop movements, multiple waves, and profound demographic and social disruption. It marks the moment when global interconnection — military, economic, and political — made it possible for a local virus to become a global catastrophe.</p>
+<p>[1.9 min | ends ~7:14]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="influenza-dominated-the-pandemic-century-and-our-expectations" class="slide level2 smaller">
+<h2>Influenza dominated the pandemic century — and our expectations</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Origin and route</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Influenza A H1N1, 1918–20</strong></td>
+<td><strong>Animal-related; spread with WWI troop movements</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Influenza A H2N2, 1957–58</strong></td>
+<td><strong>China; wild birds → poultry/pigs → humans</strong></td>
+</tr>
+<tr class="odd">
+<td>Cholera (El Tor), 1961–</td>
+<td>Indonesia; food and water; ballast-water spread</td>
+</tr>
+<tr class="even">
+<td><strong>Influenza A H3N2, 1968–70</strong></td>
+<td><strong>Hong Kong; birds → livestock → humans</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Influenza A H1N1, 1977–78</strong></td>
+<td><strong>Probable laboratory or vaccine release</strong></td>
+</tr>
+<tr class="even">
+<td>HIV/AIDS, 1981–</td>
+<td>Central Africa; primate spillovers → global travel</td>
+</tr>
+<tr class="odd">
+<td>SARS, 2002–03</td>
+<td>Guangdong; wildlife farming and live-animal markets</td>
+</tr>
+<tr class="even">
+<td><strong>Influenza A H1N1pdm09, 2009–10</strong></td>
+<td><strong>Mexico; reassortment in industrial pig farms</strong></td>
+</tr>
+<tr class="odd">
+<td>Zika, 2007–17</td>
+<td>Africa/Asia; urbanization and <em>Aedes</em> mosquitoes</td>
+</tr>
+<tr class="even">
+<td>COVID-19, 2019–</td>
+<td>Wuhan; wildlife trade or possible lab release</td>
+</tr>
+<tr class="odd">
+<td>Mpox, 2022–23</td>
+<td>West/Central Africa; spillover from wild rodents</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>Here is the pandemic record of the twentieth and twenty-first centuries — eleven major events. I want to read this list three times, through three different lenses.</p>
+<p>First lens: influenza. Depending on classification, five of these eleven were influenza A events. This historical pattern shaped expectations. For decades, most preparedness planning — from WHO frameworks to national stockpiles — assumed the next major pandemic would be influenza. Each of these flu pandemics arose by reassortment, usually in agricultural or mixed-animal systems where viruses from birds, pigs, and people meet. Nineteen fifty-seven emerged in southern China from an avian-human reassortment; 1968 in Hong Kong by a similar process; 2009 from decades of viral mixing in globally traded pigs.</p>
+<p>But this focus created a kind of tunnel vision. It reflected the pathogens we had already seen rather than the processes driving emergence. COVID-19 was the reminder that pandemic risk is not limited to influenza — that our models of “the next big one” are often constrained by historical memory rather than structural analysis.</p>
+<p>[1.1 min | ends ~8:23]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="nine-of-eleven-trace-to-food-agriculture-or-water" class="slide level2 smaller">
+<h2>Nine of eleven trace to food, agriculture, or water</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Origin and route</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Influenza A H1N1, 1918–20</strong></td>
+<td><strong>Animal-related; spread with WWI troop movements</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Influenza A H2N2, 1957–58</strong></td>
+<td><strong>China; wild birds → poultry/pigs → humans</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Cholera (El Tor), 1961–</strong></td>
+<td><strong>Indonesia; food and water; ballast-water spread</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Influenza A H3N2, 1968–70</strong></td>
+<td><strong>Hong Kong; birds → livestock → humans</strong></td>
+</tr>
+<tr class="odd">
+<td>Influenza A H1N1, 1977–78</td>
+<td>Probable laboratory or vaccine release</td>
+</tr>
+<tr class="even">
+<td>HIV/AIDS, 1981–</td>
+<td>Central Africa; primate spillovers → global travel</td>
+</tr>
+<tr class="odd">
+<td><strong>SARS, 2002–03</strong></td>
+<td><strong>Guangdong; wildlife farming and live-animal markets</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Influenza A H1N1pdm09, 2009–10</strong></td>
+<td><strong>Mexico; reassortment in industrial pig farms</strong></td>
+</tr>
+<tr class="odd">
+<td>Zika, 2007–17</td>
+<td>Africa/Asia; urbanization and <em>Aedes</em> mosquitoes</td>
+</tr>
+<tr class="even">
+<td><strong>COVID-19, 2019–</strong></td>
+<td><strong>Wuhan; wildlife trade or possible lab release</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Mpox, 2022–23</strong></td>
+<td><strong>West/Central Africa; spillover from wild rodents</strong></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>Second lens: origins. Pathogens do not appear in a vacuum. Across these eleven pandemics, nine have clear associations with food, agriculture, or water. The conditions under which humanity feeds itself, extracts resources, and organizes production create the ecological interfaces where novel pathogens evolve, spill over, and spread.</p>
+<p>SARS emerged from the live-animal markets of southern China — civets and raccoon dogs, farmed for food, infected with coronaviruses derived from horseshoe bats; forty percent of the earliest human cases had occupational exposure to wildlife handling. COVID-19, two decades later, plausibly reflects the same structure — though a laboratory-associated origin cannot be fully excluded on current evidence.</p>
+<p>Cholera — the only major bacterial pandemic of the period — reflects a different ecology but the same principle: the seventh pandemic began in Indonesia in 1961 and spread via maritime trade, entering human populations through contaminated water and seafood. And mpox spills over through contact with rodents hunted or prepared as food — with one American outbreak, in 2003, arriving instead through the exotic pet trade.</p>
+<p>The through-line is that pandemics are downstream consequences of how societies produce food, structure trade, and interact with animals.</p>
+<p>[1.3 min | ends ~9:39]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="pandemics-spread-along-the-corridors-of-the-global-economy" class="slide level2 smaller">
+<h2>Pandemics spread along the corridors of the global economy</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Origin and route</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Influenza A H1N1, 1918–20</strong></td>
+<td><strong>Spread with WWI troop and transport routes</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Influenza A H2N2, 1957–58</strong></td>
+<td><strong>Encircled the globe with early commercial aviation</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Cholera (El Tor), 1961–</strong></td>
+<td><strong>Reached Latin America 1991 via ballast water → IMO Convention (2004)</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Influenza A H3N2, 1968–70</strong></td>
+<td><strong>Spread in step with the jet age</strong></td>
+</tr>
+<tr class="odd">
+<td>Influenza A H1N1, 1977–78</td>
+<td>Probable laboratory or vaccine release</td>
+</tr>
+<tr class="even">
+<td><strong>HIV/AIDS, 1981–</strong></td>
+<td><strong>Amplified by labor mobility and international travel</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>SARS, 2002–03</strong></td>
+<td><strong>One hotel floor → three continents in days</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Influenza A H1N1pdm09, 2009–10</strong></td>
+<td><strong>Global pig trade, then global air travel</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Zika, 2007–17</strong></td>
+<td><strong>Travel + invasive vectors across the Pacific and Americas</strong></td>
+</tr>
+<tr class="even">
+<td><strong>COVID-19, 2019–</strong></td>
+<td><strong>The full global aviation network</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Mpox, 2022–23</strong></td>
+<td><strong>International travel networks; 2003 via pet trade</strong></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>Third lens: spread. Nearly all modern pandemics have moved along the very corridors that connect the global economy.</p>
+<p>For respiratory pathogens, international mobility is an accelerant. In 1918, influenza followed troop and transport routes to every inhabited continent within months. The later influenza pandemics spread in step with commercial aviation, each encircling the globe within weeks. SARS in 2003, and SARS-CoV-2 two decades later, followed the same pattern: local zoonotic emergence amplified through international air travel.</p>
+<p>But trade moves pathogens with equal force — sometimes without moving infected people at all. Cholera’s modern spread, from Indonesia to Latin America, followed shipping routes and ballast-water discharge — and prompted an international legal response, the IMO Ballast Water Convention. The 2003 U.S. mpox outbreak traced to imported rodents in the exotic-pet trade.</p>
+<p>One more row deserves a sentence: the 1977 H1N1 event, almost genetically identical to viruses from the 1950s, almost certainly escaped from a laboratory or vaccine-production setting. As bioscience globalizes, laboratory risk globalizes with it — a governance frontier I’m happy to return to in questions.</p>
+<p>Across all three lenses, a single theme: pandemic spread is not random. It is structured by the same networks — of people, goods, and animals — that constitute the architecture of globalization itself.</p>
+<p>[1.4 min | ends ~11:04]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="pandemics-rival-the-great-economic-shocks-of-the-modern-era" class="slide level2 figure">
+<h2>Pandemics rival the great economic shocks of the modern era</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/pandemic-cost-deaths-light.png" class="quarto-figure quarto-figure-center" height="460"></p>
+</figure>
+</div>
+<p class="caption">
+Economic impact as a share of world output against total deaths for the century’s pandemics, with the era’s major non-pandemic economic shocks (open triangles) for comparison.
+</p>
+<aside class="notes">
+<p>One more pattern from the historical record, from an analysis of my own for the book. This figure places the century’s pandemics on the same axes as its great economic shocks: economic impact as a share of world output, against total deaths. The point is that pandemics rival the defining economic crises of the modern era. COVID-19’s toll approached a tenth of world output in a single year, and the cumulative burden of HIV/AIDS rivals the Great Depression. Pandemics belong on the same page as financial crises and oil shocks — and sometimes at the top of it.</p>
+<p>[0.7 min]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="from-events-to-system" class="title-slide slide level1 divider center">
+<h1>From events to system</h1>
+<aside class="notes">
+<p><em>Eleven pandemics give us a pattern — but eleven events cannot give us an explanation. For that, we have to widen the frame.</em></p>
+<p>[0.2 min | ends ~11:13]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="emergence-is-caused-by-human-action" class="slide level2">
+<h2>Emergence is caused by human action</h2>
+<blockquote>
+<p>“Most emerging infections appear to be caused by pathogens already present in the environment, brought out of obscurity or given a selective advantage by changing conditions and afforded an opportunity to infect new host populations… Surprisingly often, disease emergence is caused by human actions, however inadvertently.”</p>
+</blockquote>
+<p class="caption">
+Morse, S.S. (1995) “Factors in the emergence of infectious diseases,” <em>Emerging Infectious Diseases</em> 1: 7–15.
+</p>
+<aside class="notes">
+<p>Ultimately, we want to know whether these modern pandemics share genuine through-lines. But pandemics are statistically scarce — a dozen events in a century can hint at patterns, but they cannot, on their own, explain why new pathogens emerge.</p>
+<p>So the key move is to widen the frame: to see pandemics as the visible peaks of a much larger landscape of emergence — one that includes several hundred documented emerging infectious disease events over recent decades. And this framing is not new. Stephen Morse, virologist at Rockefeller University and co-chair of the influential 1992 Institute of Medicine committee, wrote this in the inaugural issue of the CDC journal Emerging Infectious Diseases, in 1995: most emerging infections are caused by pathogens already present in the environment, given their opportunity by changing conditions — and surprisingly often, that change is human action.</p>
+<p>That sentence was written thirty years ago, and the field has repeated it ever since: disease emergence is caused by human action. But the observation has never really been cashed out. What exactly is that human action? Through what channels does it operate? And how does the commonality running beneath these hundreds of emergences help us understand pandemics? Nobody has worked that through — and doing so is the aim of my book, and of the rest of this talk.</p>
+<p>[1.2 min | ends ~12:23]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="emergence-is-a-measurable-global-process" class="slide level2 figure">
+<h2>Emergence is a measurable global process</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/jones-2008.png" class="quarto-figure quarto-figure-center" height="440"></p>
+</figure>
+</div>
+<p class="caption">
+Jones et al.&nbsp;compiled 335 emerging-disease events, 1940–2004: the majority zoonotic, clustered where demographic growth, land-use change, and economic integration accumulate.
+</p>
+<p class="caption">
+Jones, K.E. et al.&nbsp;(2008) “Global trends in emerging infectious diseases,” <em>Nature</em> 451: 990–993.
+</p>
+<aside class="notes">
+<p>A landmark in the shift from qualitative insight to quantitative global analysis was the Nature paper by Kate Jones and colleagues in 2008 — an early systematic attempt to treat emerging infectious diseases not as anecdotes but as data.</p>
+<p>Jones and her team compiled more than 300 emergence events from 1940 to 2004. Three findings stand out. First, the temporal signal: events rose steadily to a peak in the 1980s. Second, the biological pattern: about sixty percent were zoonotic — and of those, most came from wildlife rather than livestock, mirroring the pandemic history we just reviewed. Third, the geographic pattern: emergence was not random. Events clustered in regions undergoing rapid demographic growth, land-use change, agricultural intensification, and economic integration.</p>
+<p>The key contribution was conceptual as much as empirical: emerging infectious diseases form a measurable global process. They arise where human-driven ecological and social changes accumulate — an early empirical bridge between emergence and the broader architecture of globalization.</p>
+<p>[1.1 min | ends ~13:27]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-list-of-drivers-keeps-growing-and-that-is-the-point" class="slide level2">
+<h2>The list of “drivers” keeps growing — and that is the point</h2>
+<p><strong>1992 IOM report:</strong> 6 factors — microbial adaptation; demographics and behavior; economic development and land use; travel and commerce; technology and industry; breakdown of public health</p>
+<p><strong>2003 IOM report:</strong> 13 factors — adding climate, ecosystems, poverty and inequality, war and famine, political will, intent to harm…</p>
+<p><strong>Stephens et al.&nbsp;2021:</strong> 48 factors in 9 categories</p>
+<aside class="notes">
+<p>If we want a more complete theory of emergence, we need the structural processes behind it. An early attempt came from the Institute of Medicine’s 1992 report, which identified six precipitating factors — among them demographic change, land use, international travel and commerce, and the erosion of public health capacity. What stands out today is how clearly it framed emerging infections as products of human systems — not mysterious shocks, but predictable outcomes.</p>
+<p>A decade later, the IOM returned to the question, and the list had grown to thirteen — adding climate, poverty and inequality, war, state capacity, even deliberate release. The deeper shift was conceptual: where 1992 treated the drivers as separate influences, 2003 described them as interdependent forces in a rapidly changing global environment.</p>
+<p>And when my colleagues and I examined the question empirically — in a working group at the Center for the Ecology of Infectious Diseases here at UGA — we catalogued forty-eight characteristics in nine categories across the largest modern zoonotic outbreaks. The proliferation is the finding: no single factor reliably predicts outbreak size. Emergence reflects combinatorial, multi-domain interactions that differ from one event to the next.</p>
+<p>[1.3 min | ends ~14:44]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="no-single-driver-predicts-outbreak-size" class="slide level2 figure">
+<h2>No single driver predicts outbreak size</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/stephens-outbreaks.png" class="quarto-figure quarto-figure-center" height="420"></p>
+</figure>
+</div>
+<p class="caption">
+Across the 100 largest zoonotic outbreaks since 1974, large events involved <em>more</em> drivers than background outbreaks — vector abundance, population density, unusual weather, water contamination — in outbreak-specific combinations.
+</p>
+<p class="caption">
+Stephens, P.R. et al.&nbsp;(2021) <em>Phil. Trans. R. Soc. B</em> 376: 20200535.
+</p>
+<aside class="notes">
+<p>Here is that analysis of the hundred largest modern zoonotic outbreaks. What emerges is not simplicity but structure. Large outbreaks tended to have more drivers than background outbreaks, and they were related to large-scale environmental and demographic factors: changes in vector abundance, human population density, unusual weather, water contamination. The pathogens of large outbreaks were more likely to be viral and vector-borne.</p>
+<p>Crucially, these characteristics do not align into a single causal sequence. They form a many-to-many architecture: each outbreak involves a different subset of factors, and no single driver — or even small cluster of drivers — consistently predicts size. This is complexity in the rigorous sense: emergence arises from combinatorial interactions across domains, not from universal pathways.</p>
+<p>So the findings undermine the search for a single causal narrative — and they point decisively toward a systems-level explanation. To build one, we have to step back and name the system. The factors we list as “drivers” — land-use change, mobility, trade — are themselves downstream expressions of a much broader transformation: the globalization of human activity, and the extraordinary growth that accompanied it.</p>
+<p>[1.2 min | ends ~15:57]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="globalization-and-growth" class="title-slide slide level1 transition center">
+<h1>Globalization and growth</h1>
+<aside class="notes">
+<p><em>So what is this system that keeps producing new diseases? To answer that, we need to talk about globalization — and about the extraordinary growth that drove it.</em></p>
+<p>[0.2 min | ends ~16:08]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="globalization-is-the-intensification-of-worldwide-social-relations" class="slide level2">
+<h2>Globalization is the intensification of worldwide social relations</h2>
+<blockquote>
+<p>“Globalization can… be defined as the intensification of worldwide social relations which link distant localities in such a way that local happenings are shaped by events occurring many miles away and vice versa.”</p>
+</blockquote>
+<p class="caption">
+Anthony Giddens (1990) <em>The Consequences of Modernity</em>
+</p>
+<aside class="notes">
+<p>So: what do we mean by globalization? It’s a word that has been asked to carry so much freight it sometimes collapses under the load. In writing this book, I have been tuning into two very different literatures that use this same word and rarely read each other: a sociological literature, and an economic one. Globalization is a concept in tension — there is no unique authority to appeal to for its meaning — and part of the work of the book is holding the two traditions in one frame.</p>
+<p>The sociological tradition begins with Anthony Giddens, writing in 1990 — before the commercial internet, before anyone spoke of a “global supply chain”: globalization is the intensification of worldwide social relations which link distant localities in such a way that local happenings are shaped by events occurring many miles away, and vice versa.</p>
+<p>“Local happenings.” A cluster of unusual pneumonia in Wuhan in the last weeks of 2019 became, within a year, shuttered schools in Ohio, refrigerated trucks behind the hospitals of Bergamo, and an empty Times Square. Giddens wrote that definition about nothing in particular; COVID-19 made it concrete for everyone at once.</p>
+<p>Through the 1990s the word narrowed in the public mind to open markets and neoliberal trade policy — the economists’ sense of the term. The sociologists said at the time that this narrowing was a mistake: globalization is expressed in all the key domains of social activity — political and cultural as much as economic. That wider view is the one I take: globalization is real and consequential, but neither complete nor inevitable — a historically contingent reordering of how social life is stretched across space.</p>
+<p><em>That is the sociologists’ globalization. The economists tell a different story — and it begins with history, because globalization has gone into reverse before.</em></p>
+<p>[1.5 min | ends ~17:40]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="globalization-comes-in-waves-and-has-reversed-before" class="slide level2 figure">
+<h2>Globalization comes in waves — and has reversed before</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/trade-waves.png" class="quarto-figure quarto-figure-center" height="440"></p>
+</figure>
+</div>
+<p class="caption">
+World trade openness, 1870–2024. The interwar collapse — trade falling from a fifth of world output to a tenth — is the empirical refutation of any claim that globalization is inevitable.
+</p>
+<aside class="notes">
+<p>Here the economic historians take over from the sociologists, and their globalization is a different creature: measured in prices and flows, and anything but a smooth ascent.</p>
+<p>An early and instructive episode of biological globalization came in 1492, when Columbus’s ships closed the ten-thousand-year separation between the hemispheres — the Columbian Exchange. Maize and potatoes crossed east and fed Europe’s rise; smallpox, measles, and influenza crossed west into populations with no immunity, and killed on a scale still difficult to comprehend. At the very start of the story, the pattern this book documents: connection distributes opportunity and pathogen along the same routes, and seldom to the same people.</p>
+<p>Economic globalization came later. Between 1870 and 1914, the steamship, railway, and telegraph produced a first great age: capital flowed under the gold standard, sixty million Europeans emigrated, and trade climbed toward a fifth of world output. Into this integrated world the 1918 influenza erupted.</p>
+<p>Then the world pulled back. Two world wars, tariff walls, and the Depression produced the great deglobalization of 1914 to 1945 — trade fell back to a tenth of world output.</p>
+<p>The recovery came in two stages — Bretton Woods after 1945, then, after 1980, a hyperactive phase that dwarfed the first wave. And that modern wave did not integrate the world evenly. Immanuel Wallerstein described a core and a periphery — a wealthy, capital-exporting center and a resource-supplying margin. The split maps onto disease: the frontiers where new pathogens emerge lie overwhelmingly in the periphery; the capacity to make and hoard vaccines lies in the core.</p>
+<p>[1.7 min | ends ~19:22]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="for-most-of-history-there-was-no-growth-at-all" class="slide level2 figure">
+<h2>For most of history, there was no growth at all</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/globalization-and-growth-fig1.png" class="quarto-figure quarto-figure-center" height="440"></p>
+</figure>
+</div>
+<p class="caption">
+Global GDP per capita over two millennia: essentially flat for all of recorded history, then a near-vertical ascent beginning around 1800.
+</p>
+<p class="caption">
+Daniel Susskind (2024) <em>Growth: A History and a Reckoning</em>
+</p>
+<aside class="notes">
+<p>Globalization and economic growth are not the same thing, but they are wound together so tightly they are easily confused. To see why, look first at the sheer scale of the growth — whose strangeness is easy to miss from inside it.</p>
+<p>In his book Growth: A History and a Reckoning, the economist Daniel Susskind assembles the numbers, and they are startling. Real wages in England barely moved for six centuries — a person in 1800 was scarcely better off than an ancestor in 1200. Then, around 1800, they began to climb, and have since risen roughly twelvefold. Global output per person tells the same story on a longer axis: broadly flat for millennia, then a near-vertical ascent to something like fifteen times its pre-industrial level.</p>
+<p>Nearly all of the wealth that has ever existed was made in the last two hundred years. The question that occupied economics for a century is: what broke the stagnation?</p>
+<p>[1.1 min | ends ~20:30]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-broke-the-stagnation-ideas-that-dont-run-out" class="slide level2">
+<h2>What broke the stagnation: ideas that don’t run out</h2>
+<p><strong>Solow (1956)</strong> — growth cannot be explained by labor and capital alone; most of it is a <em>residual</em>: technology</p>
+<p><strong>Romer (1990)</strong> — the residual explained: ideas are <em>nonrival</em> and <em>cumulative</em> — usable by everyone at once, combinable forever</p>
+<p><strong>Mokyr</strong> — the recipes needed a culture willing to cook: the spread of a scientific mentality</p>
+<aside class="notes">
+<p>The proximate answer is technological progress. Robert Solow showed in the 1950s that the growth of rich economies could not be explained by adding more labor and more capital — most of it came from a residual he identified with technology: the recipes by which inputs are turned into outputs. But Solow left the recipes falling from the sky.</p>
+<p>It was Paul Romer, decades later, who brought them inside the model — and identified what makes ideas such peculiar engines of growth. Ideas are nonrival: usable by everyone at once without being used up. And they are cumulative: a theorem proved once is available forever, and can be combined with other ideas to make more. Unlike coal or land, ideas do not run out. That is why growth, once it started, could compound.</p>
+<p>And the recipes needed a culture willing to cook. Joel Mokyr argues that what tipped Europe into sustained growth was a new mentality — a conviction that the natural world held a hidden order careful experiment could uncover. The same coal and iron sat unused for centuries before a culture arose that knew what to do with them.</p>
+<p>Once raising GDP became an explicit objective of policy, the productive potential of those ideas was fully unleashed — and trade liberalization was one of the chief instruments of the unleashing.</p>
+<p>[1.5 min | ends ~21:59]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="trade-was-the-unleashing-comparative-advantage-with-caveats" class="slide level2">
+<h2>Trade was the unleashing — comparative advantage, with caveats</h2>
+<p><strong>Ricardo (1817)</strong> — England and Portugal, cloth and wine: specialization and exchange leave <em>both</em> parties richer, even when one is better at everything</p>
+<p><strong>The evidence</strong> — openness helps growth, but by less, and under more conditions, than the boosters claimed</p>
+<aside class="notes">
+<p>The intellectual justification for trade as an engine of growth is comparative advantage — David Ricardo’s demonstration, in 1817, that economic actors do best to specialize in whatever they can produce at the lowest opportunity cost, even when a trading partner is better at everything in absolute terms. His illustration was England and Portugal, cloth and wine. Portugal could make both with less labor than England — and yet both countries came out richer if Portugal made only wine, England only cloth, and each bought the other across the water. Absolute skill was beside the point; what mattered was what each side had to give up.</p>
+<p>Economists count comparative advantage among the deepest results in their field — and yet its empirical record is muddier than its logic. In the 1990s, Sachs and Warner produced influential evidence that open economies grew markedly faster than closed ones; Rodríguez and Rodrik then took the finding apart, showing much of the effect came from other troubles bundled into the “openness” index. My reading: trade openness helps growth, but by less, and under more conditions, than the triumphalist version of the 1990s allowed — a real effect, not a magic one, and one that depends heavily on the institutions a country already has.</p>
+<p>[1.5 min | ends ~23:28]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-four-flows-measured" class="slide level2 figure">
+<h2>The four flows, measured</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/four-flows.png" class="quarto-figure quarto-figure-center" height="440"></p>
+</figure>
+</div>
+<p class="caption">
+Goods, capital, people, and ideas have all intensified their movement across borders — the measurable substance behind the abstraction of “interconnection.” The one sharp reversal: air travel collapsed by ~60% in 2020, then recovered within three years.
+</p>
+<aside class="notes">
+<p>So growth and globalization fed each other. And we can measure the result. To a first approximation, everything that flows through the web of globalization is one of four things: goods and services, capital, people, and ideas. Here are quantified examples of all four: trade, foreign investment, travel, and the movement of information, all rising to levels without precedent in the decades after 1970.</p>
+<p>I want to draw your attention to two things in particular. First, these series can be read in two ways — what the KOF Globalisation Index calls de facto globalization, the observed flows themselves, and de jure globalization, the treaties, policies, and institutional arrangements that enable them. Both rose together. The flows are not natural phenomena; they are legal and economic constructions.</p>
+<p>Second, the people panel: global air travel collapsed by roughly sixty percent in 2020 as the pandemic closed borders, then recovered within three years. That dip is the feedback loop made visible — the pandemic briefly threw globalization’s people-flow into reverse. I want to hold on to that thought; it comes back at the end of the argument.</p>
+<p>[1.1 min | ends ~24:36]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-reckoning-growths-two-unpaid-debts" class="slide level2 figure">
+<h2>The reckoning: growth’s two unpaid debts</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/elephant.png" class="quarto-figure quarto-figure-center" height="420"></p>
+</figure>
+</div>
+<p class="caption">
+The “elephant curve”: real income growth 1988–2008 by percentile of the global income distribution. Asia’s emerging middle classes and the global top 1% gained most; the rich world’s working classes fell behind in relative terms.
+</p>
+<p class="caption">
+Milanovic (2018); Susskind (2024)
+</p>
+<aside class="notes">
+<p>But the growth, however achieved, came at a cost its beneficiaries were slow to count. This is the “reckoning” of Susskind’s subtitle: the same technologies that lifted billions out of poverty have also been, in his phrase, climate-destroying, inequality-creating, work-threatening, politics-undermining, and community-disrupting.</p>
+<p>Two of those debts bear directly on infectious disease. The first is environmental: much of the century’s growth was financed by drawing down natural capital — forests, fisheries, soils, the atmosphere — precisely the disturbances that remake the human-animal interface where new pathogens cross over.</p>
+<p>The second is distributional. This is Branko Milanovic’s elephant curve: every person on earth lined up from poorest to richest, and each group’s real income growth from 1988 to 2008. The rising back is Asia’s emerging middle class — gains of seventy, eighty percent. The soaring trunk-tip is the global top one percent. The sagging point near the ninetieth percentile is the rich world’s working and middle class, who gained least.</p>
+<p>And the unevenness has epidemiological consequences. During COVID, the economist Mushfiq Mobarak re-ran the models steering Western lockdown policy with the demography and economics of Bangladesh, Nigeria, and Ghana — and the answer changed. In a young country with few hospital beds, lockdown saves fewer lives, and a day-laborer who stays home does not eat that week. Lockdown, it turns out, is something close to a luxury good. When vaccines arrived, the story repeated: across fifteen low- and middle-income countries, willingness to take the vaccine was higher than in the United States. Hesitancy was not the bottleneck — access was. Where in the world economy a person is born determines what a pandemic does to them.</p>
+<p>[1.8 min | ends ~26:26]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="growth-and-globalization-are-a-self-reinforcing-pair" class="slide level2 figure">
+<h2>Growth and globalization are a self-reinforcing pair</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/figure-3-4-basic-model-v2.png" class="quarto-figure quarto-figure-center" height="420"></p>
+</figure>
+</div>
+<p class="caption">
+The basic model: globalization and growth drive one another, and their joint output is a wave of social and environmental change.
+</p>
+<aside class="notes">
+<p>Let me compress all of that into one picture — the basic model of the book.</p>
+<p>Globalization and growth form a self-reinforcing pair. Growth expands trade, investment, mobility, and the production of ideas; those flows, in turn, feed growth. And the joint output of the pair is a wave of social and environmental change — land conversion, urbanization, climate disruption, agricultural intensification — at a pace and scale without precedent in human history.</p>
+<p>That wave is where disease enters.</p>
+<p>[0.7 min | ends ~27:09]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="the-globalization-grid" class="title-slide slide level1 transition center">
+<h1>The globalization grid</h1>
+<aside class="notes">
+<p><em>But to see exactly where, we need to be more precise about the machinery of globalization itself — and that brings me to the conceptual center of the talk.</em></p>
+<p>[0.2 min | ends ~27:18]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="four-means-three-domains" class="slide level2">
+<h2>Four means, three domains</h2>
+<p><strong>The means</strong> — what moves: <strong>goods &amp; services</strong>, <strong>capital</strong>, <strong>people</strong>, <strong>ideas</strong></p>
+<p><strong>The domains</strong> — what it moves through: <strong>economic</strong>, <strong>political</strong>, <strong>cultural</strong></p>
+<p>Each flow is also a <em>vector</em> — carrying disease along the same channels it opens for everything else</p>
+<aside class="notes">
+<p>This is where I try to bring the two literatures together — the economists’ measurable flows and the sociologists’ domains of social life — in a single frame. Giddens’s definition contains two questions. Which social relations? And linked how? The answer to the second I call the means of globalization: to a first approximation, everything that flows through the web of globalization is one of the four things we just measured — goods and services, capital, people, and ideas. The traded product, the invested dollar, the migrant and the tourist, the datum and the belief.</p>
+<p>The answer to the first I call the domains: following the sociologists, I take them to be three. The political domain — states, treaties, regulatory bodies, from the WTO to the WHO. The economic domain — investment, currency markets, multinational firms, supply chains. And the cultural domain — the circulation of language, food, media, and belief.</p>
+<p>And here is the epidemiological point: each of the four means is also a vector, in the epidemiologist’s sense — whatever ferries a pathogen from one host to the next. Classically that’s a mosquito. In this book, it is the flow of goods, capital, people, or ideas that carries disease along the same channels it opens for everything else.</p>
+<p>Setting the four means against the three domains yields a grid of twelve cells.</p>
+<p>[1.3 min | ends ~28:37]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-globalization-grid-twelve-moments" class="slide level2">
+<h2>The globalization grid: twelve moments</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Economic</strong></th>
+<th><strong>Political</strong></th>
+<th><strong>Cultural</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Goods &amp; services</strong></td>
+<td>Commerce</td>
+<td>Regulation</td>
+<td>Consumption</td>
+</tr>
+<tr class="even">
+<td><strong>Capital</strong></td>
+<td>Investment</td>
+<td>Fiscal power</td>
+<td>Philanthropy &amp; impact capital</td>
+</tr>
+<tr class="odd">
+<td><strong>People</strong></td>
+<td>Labor</td>
+<td>Migration</td>
+<td>Travel &amp; tourism</td>
+</tr>
+<tr class="even">
+<td><strong>Ideas</strong></td>
+<td>Innovation</td>
+<td>Intellectual property</td>
+<td>Knowledge sharing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="each-cell-is-a-moment-of-globalization-a-place-where-a-flow-meets-a-domain-with-consequences-for-the-emergence-and-control-of-disease">Each cell is a <em>moment of globalization</em> — a place where a flow meets a domain, with consequences for the emergence and control of disease</h3>
+<aside class="notes">
+<p>This is the globalization grid. I call each cell a moment of globalization — a place where a particular flow meets a particular sphere of social life and does something specific, with consequences for infectious disease. The grid is not a theory. It is scaffolding, and its virtue is that it forces us to be concrete: not “globalization spreads disease,” which is true and useless, but this flow, meeting this domain, doing this.</p>
+<p>Let me walk down the economic column. Commerce — the flow of goods — drives the climatic and land-use changes that expand the range of disease vectors. Investment clears forest and cuts roads to the frontier, pushing people against wildlife exactly where spillover happens. Labor carries infections along its routes. And innovation cuts the other way: the biotechnology that produced mRNA vaccines in under a year is a moment of globalization too.</p>
+<p>Now the political column — I want to linger here, because every cell in it is a legal construction. Regulation: the International Health Regulations oblige states to report a dangerous outbreak within twenty-four hours — legal machinery born of the 2003 SARS episode, when delayed disclosure let the virus travel. In 2020, the reporting itself largely worked. The framework’s weaknesses showed elsewhere: WHO had no power to verify information independently, and when more than a hundred countries closed borders against its advice — exactly the unilateral restrictions the Regulations are meant to discipline — nothing in the framework could stop them. Fiscal power: the World Bank’s “pandemic bonds” had payout conditions so intricate that during Ebola in eastern Congo the money arrived late and thin while investors collected coupons. Migration: cholera, measles, and tuberculosis find the crowding and broken sanitation of the refugee camp. Intellectual property: the patents that slowed COVID vaccines to poor countries are a modern enclosure of knowledge.</p>
+<p>The cultural column, briefly: consumption — the appetite for wild meat sustaining the markets implicated in SARS; philanthropy — Gates, Gavi, CEPI shaping global health priorities with contested accountability; travel — the ski resorts that seeded COVID across Europe; and knowledge sharing, the most double-edged moment of all — genomic surveillance tracking SARS-CoV-2 in real time, and the same connectivity letting misinformation travel faster than the virus.</p>
+<p>Twelve cells. Twelve channels. Twelve places where law, policy, and institutions decide how much risk the system carries.</p>
+<p>[2.5 min | ends ~31:06]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-chapter-i-shared-is-one-cell-of-this-grid" class="slide level2">
+<h2>The chapter I shared is one cell of this grid</h2>
+<p><strong>Extractive industry</strong> = <strong>capital × economic</strong>: investment opens the frontier — deforestation, mining, roads — and restructures the human–wildlife interface</p>
+<p><strong>But spillover is not yet a pandemic</strong> — Dobson et al.&nbsp;(2020) price forest conservation at $20–30B/yr; necessary, not sufficient</p>
+<p><strong>The pandemics we reviewed ran through <em>other</em> cells</strong> — agriculture, mobility, markets, governance</p>
+<aside class="notes">
+<p>Now — the chapter I shared, on extractive industry, is one cell of this grid: capital meeting the economic domain. Investment in mining, timber, and agriculture opens the frontier — clearing forest, cutting roads, moving labor into intact ecosystems — and restructures the interface between people and wildlife exactly where spillover happens. The hunting camps, mining towns, and road-edge settlements in that chapter are what a moment of globalization looks like on the ground.</p>
+<p>Influential scholars have argued that this is where pandemic prevention should focus. Dobson and colleagues, in Science, estimated that twenty to thirty billion dollars per year in forest conservation and wildlife-trade regulation would be cost-effective relative to the trillions lost to COVID — and the links between deforestation and certain classes of spillover, especially bat-associated viruses, are robust.</p>
+<p>But place that argument in the broader causal landscape. Land-use change is one pathway among many, and historically it has not been the precipitating factor for the pandemics we reviewed: influenza emerged from agricultural, military, and urban contexts; HIV spilled over through bushmeat hunting but became a pandemic through labor systems, mobility, and urbanization. Spillover at the frontier is where a pandemic can begin — but a pandemic happens when that local event intersects the global dynamics of connectivity, mobility, and vulnerability.</p>
+<p>That is what the grid buys us: it locates the extractive frontier — one cell among twelve — without mistaking it for the whole.</p>
+<p>[1.6 min | ends ~32:42]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="does-the-evidence-hold-strong-in-bulk-knotted-in-detail" class="slide level2">
+<h2>Does the evidence hold? Strong in bulk, knotted in detail</h2>
+<p><strong>Amazon malaria</strong> — 10% more deforestation → ~3% more malaria (MacDonald &amp; Mordecai 2019)</p>
+<p><strong>But</strong>: outbreak maps partly reflect <em>where health systems can see</em> — reporting falls ~1/3 per hour of travel from care (Gibb et al.&nbsp;2024)</p>
+<p><strong>And</strong>: across ~3,000 observations, deforestation <em>per se</em> is a weak, context-dependent driver (Mahon et al.&nbsp;2024)</p>
+<h3 id="what-survives-the-structural-claim-traced-case-by-case">What survives: the structural claim, traced case by case</h3>
+<aside class="notes">
+<p>So does globalization actually drive infectious disease, or does the grid merely sort plausible anecdotes into tidy cells? The evidence answers unevenly — strong when read in aggregate, tangled when traced to any single forest or market. In the Brazilian Amazon, a ten-percent increase in deforestation was associated with roughly three percent more malaria as forest-edge habitat for the vector expanded.</p>
+<p>But push outward and the picture fragments. Gibb and colleagues, synthesizing fifty-eight thousand outbreak records, found risk concentrated in mosaic landscapes — but strongly for vector-borne diseases, weakly for directly transmitted zoonoses. And, sobering: outbreak reporting fell by about a third for every additional hour of travel from the nearest health facility. Much of what looks like a map of where disease emerges is really a map of where we can detect it. And Mahon and colleagues’ meta-analysis found that while biodiversity loss, climate change, and introduced species reliably raise disease risk, deforestation as such was comparatively unimportant or idiosyncratic.</p>
+<p>What survives? Not the crude claim that any given forest clearing yields a plague. What survives is the structural claim: globalization and growth have reshaped the planetary interface between people, animals, and pathogens, at a pace and scale without precedent — but the effect in any particular place runs through a specific ecology and must be traced case by case. The grid does not predict which forest edge breeds the next outbreak. It tells us where to look, and why.</p>
+<p>[1.6 min | ends ~34:16]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-revised-model-disease-runs-through-the-twelve-moments-and-feeds-back" class="slide level2 figure">
+<h2>The revised model: disease runs through the twelve moments — and feeds back</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/figure-3-8-revised-model-v2.png" class="quarto-figure quarto-figure-center" height="420"></p>
+</figure>
+</div>
+<p class="caption">
+Globalization and growth drive emergence through the twelve moments of the grid — and a pandemic feeds back on the growth and connection that produced it, as 2020 made unforgettable.
+</p>
+<aside class="notes">
+<p>So we can revise the basic model. Globalization and growth still drive one another in a reinforcing loop — but now the loop’s output is routed explicitly through the twelve moments and into the changing interface where disease emerges. And, crucially, a return arrow runs the other way: a pandemic feeds back on the growth and connection that produced it. The sixty-percent collapse in air travel in 2020 was that feedback made visible.</p>
+<p>This is a simplification. What it does is tell us where to look and what to measure. When a new disease emerges, we can ask which moments are in play — whose movement carried it, whose capital opened the ground it came from, whose institutions were funded to respond. The slogan “globalization spreads disease” gives one answer for every outbreak, which is to say no usable answer at all. The grid gives a different one each time.</p>
+<p>[1.2 min | ends ~35:28]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="three-near-pandemics" class="title-slide slide level1 divider center">
+<h1>Three near-pandemics</h1>
+<aside class="notes">
+<p><em>Let me show you what that looks like with three near-pandemics.</em></p>
+<p>[0.1 min | ends ~35:36]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="nipah-economic-flows-restructure-ecology" class="slide level2 figure">
+<h2>Nipah: economic flows restructure ecology</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p class="caption">
+Co-location of pig sty and mango trees, Ampang village, Malaysia — the spillover interface built by agricultural investment.
+</p>
+<p class="caption credit">
+Image: Chua et al.&nbsp;(2002) <em>Malaysian J. Pathology</em> 24: 15–21.
+</p>
+</div><div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/nipah-pigsty.png" class="quarto-figure quarto-figure-center" height="540"></p>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>Nipah virus has never caused a pandemic, but it has repeatedly come close — and its emergence is one of the clearest demonstrations of how economic change, ecological disruption, mobility, and cultural practice combine.</p>
+<p>Nipah was identified in 1999 during an outbreak of severe encephalitis among pig farmers in Malaysia. The virus is maintained by fruit bats and was almost certainly circulating long before its discovery. What changed in the 1990s was the landscape: rapid economic growth — export agriculture, commercial pig production, extensive deforestation — compressed wildlife, livestock, and humans into new spatial configurations. Forest loss pushed bats into cultivated orchards — many planted, as in this photograph, directly beside high-density pig farms. Bats dropped contaminated fruit into pig enclosures; pigs amplified the virus; farmers were exposed. Case fatality was around forty percent; control required culling more than a million pigs; and pig traders moved the outbreak down the supply chain into Singapore.</p>
+<p>Spillover did not stop there. Since 2001, Bangladesh and eastern India have had near-annual outbreaks with fatality rates often above seventy percent — through a different route: consumption of raw date-palm sap contaminated by bats, a culturally embedded winter tradition. Human-to-human transmission now plays a substantial role.</p>
+<p>Mapped onto the grid: investment and commerce in Malaysia; consumption practice and mobility in Bangladesh; land-use change and health-system strain in India. Emergence rarely results from a single mechanism — it arises from interacting economic, ecological, cultural, and infrastructural processes.</p>
+<p>[1.6 min | ends ~37:12]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="chikungunya-globalization-as-biological-transport" class="slide level2 figure">
+<h2>Chikungunya: globalization as biological transport</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/vector-introductions.png" class="quarto-figure quarto-figure-center" height="400"></p>
+</figure>
+</div>
+<p class="caption">
+Global introductions of <em>Aedes</em> vectors, 1500–2025: <em>Ae. albopictus</em> — moved by trade in used tires and ornamental plants — is now established on every inhabited continent. Sources: Swan et al.&nbsp;(2022) <em>Parasites &amp; Vectors</em> 15: 303; Pabst et al.&nbsp;(2025) <em>Nature Communications</em> 16: 9127.
+</p>
+<aside class="notes">
+<p>Here is the second case. Chikungunya virus causes abrupt fever and debilitating joint pain that can persist for months or years. It is transmitted by Aedes mosquitoes — and its global expansion rode one of the best-documented biological invasions of the modern era.</p>
+<p>Aedes albopictus spread from its native Asia to every inhabited continent, carried by international trade — above all used tires and ornamental plants, in which its desiccation-resistant eggs survive long-distance transport. That expanding vector geography set the stage for an evolutionary event: during the 2005–2006 La Réunion epidemic, the virus acquired a mutation increasing its fitness in albopictus, allowing efficient transmission in temperate settings. The epidemic infected roughly a third of the island and seeded outbreaks across the Indian Ocean, India, Southeast Asia, Europe, and, from 2013, the Americas.</p>
+<p>In the grid: goods and services moved the vector; investment and urbanization built its breeding habitat; people carried the virus into regions the vector had already colonized. Chikungunya never became a pandemic — but its trajectory shows how globalization repeatedly generates the ecological opportunities that make pandemics possible.</p>
+<p>[1.2 min | ends ~38:24]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sars-2003-one-hotel-floor-three-continents" class="slide level2 figure">
+<h2>SARS 2003: one hotel floor, three continents</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/sars-diffusion.png" class="quarto-figure quarto-figure-center" height="400"></p>
+</figure>
+</div>
+<p class="caption">
+The diffusion of SARS from Hong Kong in 2003 followed the airline network, not geography. Source: Colizza et al.&nbsp;(2007) <em>BMC Medicine</em> 5: 34.
+</p>
+<aside class="notes">
+<p>Third case: the first global coronavirus epidemic of this century was not COVID-19. It was SARS, in 2003. The earliest clusters appeared in Guangdong in late 2002 among food handlers and workers exposed to market wildlife — civets and raccoon dogs as intermediate hosts, horseshoe bats as the reservoir.</p>
+<p>What made it international was the structure of commercial aviation. On the twenty-first of February 2003, a Guangdong physician, already ill, stayed one night on the ninth floor of the Metropole Hotel in Hong Kong. At least sixteen secondary infections were traced to that floor — and several of those guests departed the next morning on flights to Hanoi, Singapore, and Toronto, seeding independent outbreaks on three continents.</p>
+<p>By July 2003: 8,098 cases, 774 deaths, 29 countries — modest by pandemic standards, yet the economic impact was thirty to forty billion dollars, driven by the collapse of travel and tourism. And the institutional consequences were larger still: SARS directly drove the strengthening of the International Health Regulations and the creation of the PHEIC mechanism — the legal architecture we discussed at the start.</p>
+<p>SARS demonstrated how early-twenty-first-century connectivity could turn a localized spillover into a multinational epidemic within days. Seventeen years later, on an even denser network, SARS-CoV-2 proved the point at scale.</p>
+<p>[1.4 min | ends ~39:49]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-cases-three-configurations-of-the-same-grid" class="slide level2">
+<h2>Three cases, three configurations of the same grid</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>Economic</th>
+<th>Political</th>
+<th>Cultural</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Goods &amp; services</strong></td>
+<td>Nipah · Chik</td>
+<td>SARS</td>
+<td>Nipah</td>
+</tr>
+<tr class="even">
+<td><strong>Capital</strong></td>
+<td>Nipah · Chik</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>People</strong></td>
+<td>Nipah</td>
+<td>SARS</td>
+<td>Chik · SARS</td>
+</tr>
+<tr class="even">
+<td><strong>Ideas</strong></td>
+<td></td>
+<td>SARS</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="different-cells-activate-in-different-combinations-emergence-is-configurational">Different cells activate in different combinations — emergence is configurational</h3>
+<aside class="notes">
+<p>Stepping back, the three cases together are revealing. Biologically they have almost nothing in common: a bat paramyxovirus amplified in pigs, a mosquito-borne alphavirus dispersed by an invasive vector, a coronavirus moved through hotels and airports. But mapped onto the grid, the underlying logic comes into focus.</p>
+<p>Nipah is economic flows reorganizing ecological contact zones — investment and commerce. Chikungunya is globalization as biological transport infrastructure — trade moving the vector, people moving the virus. SARS is mobility meeting political institutions — an airline network spreading infection, and information flows, delayed reporting, and evolving health regulations shaping both spread and control.</p>
+<p>The pattern is not that one driver dominates. It is that different cells of the grid activate in different combinations — outbreak-specific configurations of the same underlying architecture. Which leads to the central insight of the talk: pandemics are not statistical outliers or aberrations of nature. They are high-visibility manifestations of ordinary globalization processes.</p>
+<p>[1.0 min | ends ~40:51]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-regularities-coupling-acceleration-asymmetry" class="slide level2">
+<h2>Three regularities: coupling, acceleration, asymmetry</h2>
+<p><strong>Coupling</strong> — once-separate systems are now tightly linked: bat ecology with industrial livestock; mosquito ecology with shipping; wildlife trade with aviation</p>
+<p><strong>Acceleration</strong> — connection is old; the <em>speed</em> of connection is unprecedented</p>
+<p><strong>Asymmetry</strong> — shared exposure, unequal consequences: emergence in the periphery, response capacity in the core</p>
+<aside class="notes">
+<p>Across the cases, three regularities.</p>
+<p>Coupling. Each event originates at a junction where systems that once operated semi-independently have become tightly linked: bat ecology with industrial livestock production; mosquito ecology with global shipping; wildlife trade with international air travel. As couplings tighten, disturbances in one domain propagate into others.</p>
+<p>Acceleration. Connection is not new — but the speed of connection is. Mosquito eggs cross oceans in weeks; a single night on one hotel floor seeds outbreaks on three continents. Faster systems compress the window for detection and intervention — which is precisely the window that law and institutions exist to hold open.</p>
+<p>Asymmetry. Risk is structurally uneven. The mechanisms that generate emergence are not the ones that determine vulnerability. Emergence concentrates at the periphery’s frontiers; vaccine manufacturing and fiscal capacity concentrate in the core. Globalization creates shared exposure but unequal consequences.</p>
+<p>Coupling, acceleration, and asymmetry are the structural determinants of epidemics in the twenty-first century. Epidemics arrive not as random shocks but as system-level expressions of how the modern world is organized.</p>
+<p>[1.1 min | ends ~41:58]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="what-follows" class="title-slide slide level1 divider center">
+<h1>What follows</h1>
+<aside class="notes">
+<p><em>So what do we do with all of this? Let me close with what follows — for analysis and for policy.</em></p>
+<p>[0.2 min | ends ~42:07]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="from-drivers-to-architecture" class="slide level2">
+<h2>From drivers to architecture</h2>
+<p><strong>From lists to configurations</strong> — the unit of analysis is the pattern of interaction, not the individual driver</p>
+<p><strong>Match governance scale to system scale</strong> — nested, mutually reinforcing layers: local detection, national regulation, international coordination</p>
+<p><strong>Intervene at leverage points</strong> — mobility networks, land-use regimes, supply chains, information flows</p>
+<aside class="notes">
+<p>First: from drivers to configurations. The IOM reports and the outbreak databases give us lists. But in Nipah, chikungunya, and SARS, what mattered was never a single factor — it was the configuration, the particular way ecological change, trade, travel, and information interacted in that setting. Analysis, and policy, should target the pattern of interaction.</p>
+<p>Second: match governance scale to system scale. The same coordination problems recur at every level — local detection, national regulation of land use and mobility, international coordination of information and collective action. Effective governance has to mirror that structure: multiple nested layers that reinforce one another, rather than a single global fix. The International Health Regulations failed in 2020 not because international law is hopeless, but because a single thin layer was asked to do the work of many.</p>
+<p>Third: leverage points. The most promising interventions act on the infrastructures through which globalization operates — mobility networks, land-use regimes, commodity supply chains, and the information flows that shape trust and response. These are the places where modest, well-designed changes alter the configurations that turn local spillovers into global crises. And nearly every one of them is, at bottom, an instrument of law and institutional design.</p>
+<p>[1.4 min | ends ~43:30]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-2" class="slide level2" data-background-image="figures/savannah-port.jpg" data-background-size="cover" data-background-position="center">
+<h2></h2>
+<div class="frosted">
+<p><strong>The world we have built and the world we need</strong></p>
+<p>Our world is one in which everything moves: people, capital, ideas — and pathogens.</p>
+<p>Pandemics are the wake of that motion.</p>
+<p class="caption">
+Savannah Port, Georgia. Image: Wikimedia Commons (CC BY-SA 4.0)
+</p>
+</div>
+<aside class="notes">
+<p>What I want to leave you with is not a prediction, but a reframing.</p>
+<p>We have moved from the biology of spillover to the sociology of mobility, from ecological disruption to the political economy of global integration. The through-line is this: pandemics are not anomalies. They are expressions of the interconnected systems we inhabit — sometimes catastrophic expressions, but structurally generated all the same.</p>
+<p>A wake is not incidental. It is what a hull produces as it moves through water, and it grows with the vessel: the greater the mass and the faster the passage, the larger the wake it throws. Our world is a very large ship moving at ever-increasing speed — dense mobility, planetary supply chains, accelerated capital, instantaneous information. Rapid pathogen emergence and spread are not aberrations. They are part of the wake.</p>
+<p>So the policy question is not whether we can unwind globalization. We cannot — and in many respects should not. The question is how to redesign global interdependence so that the forces that create vulnerability instead produce resilience. That requires institutions that detect weak signals and act before cascades begin; sectors — finance, agriculture, trade — that internalize ecological and epidemiological intelligence rather than externalizing it; and multilayered coordination operating at local, national, and international scales at once. Preparedness is not a technical add-on of stockpiles and surveillance. In a world where everything moves, preparedness is an architectural principle.</p>
+<p>If pandemics are the wake of globalization, resilience lies in the design of the hull — because we cannot stop the ship.</p>
+<p>Thank you.</p>
+<p>[1.6 min | ends ~45:04]</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="additional-materials" class="title-slide slide level1 divider center">
+<h1>Additional materials</h1>
+
+</section>
+<section id="the-1977-russian-flu-and-laboratory-biosecurity" class="slide level2">
+<h2>The 1977 “Russian flu” and laboratory biosecurity</h2>
+<p>An H1N1 strain almost genetically identical to 1950s viruses re-emerged simultaneously in the USSR and northern China</p>
+<p>Genetic uniformity and absence of natural evolution strongly suggest accidental release from a laboratory or vaccine trial</p>
+<p>The policy lesson stands apart from the COVID origins debate: as bioscience globalizes, laboratory risk globalizes with it</p>
+<aside class="notes">
+<p>The 1977 H1N1 re-emergence is the clearest documented case of a probable research-related pandemic strain. Its genetic near-identity to viruses that circulated two decades earlier is inconsistent with natural circulation. The governance point: expanding global laboratory capacity means biosafety and biosecurity are now transnational regulatory problems — dual-use research oversight, the Biological Weapons Convention’s verification gap, and the unresolved COVID origins debate all live here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-economics-of-prevention-at-the-source" class="slide level2">
+<h2>The economics of prevention at the source</h2>
+<p>Dobson et al.&nbsp;(2020, <em>Science</em>): $20–30B/yr in forest conservation and wildlife-trade regulation vs.&nbsp;trillions in pandemic losses</p>
+<p>Vora et al.&nbsp;(2022, <em>Nature</em>): embed forest protection in the G20 pandemic fund, WHO pandemic agreement, CBD framework</p>
+<p>Caveat: prevention at the source addresses <em>certain classes</em> of spillover — especially bat-associated viruses — not the full pandemic portfolio</p>
+<aside class="notes">
+<p>The cost-benefit case for source-side prevention is genuinely strong for bat-associated spillover at deforestation frontiers. The caution from the main talk applies: most historical pandemics ran through agricultural, urban, and mobility channels that forest conservation would not have touched. A balanced portfolio funds both the frontier and the system.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="access-not-hesitancy" class="slide level2">
+<h2>Access, not hesitancy</h2>
+<p>Solís Arce et al.&nbsp;(2021, <em>Nature Medicine</em>): across 15 low- and middle-income countries, vaccine acceptance exceeded the U.S. benchmark</p>
+<p>Sierra Leone (Meriggi et al.&nbsp;2024, <em>Nature</em>): reaching a vaccination point cost ~3.5 hours travel each way and 10–12 days’ income</p>
+<p>Mobile delivery teams raised uptake dramatically at competitive cost per dose</p>
+<aside class="notes">
+<p>Mobarak’s two studies dismantle the “hesitancy” explanation for global vaccine inequity. Willingness was higher in every low- and middle-income sample than in the United States; the binding constraint was the time and money cost of access. When the barrier was removed — nurses and doses driven into remote villages — uptake climbed immediately. The dose withheld and the dose that cannot be reached come to the same empty arm.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="pheic-declarations-to-date" class="slide level2 figure">
+<h2>PHEIC declarations to date</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/pheic-timeline-lower.png" class="quarto-figure quarto-figure-center" height="420"></p>
+</figure>
+</div>
+<p class="caption">
+Timeline and duration of the eight Public Health Emergencies of International Concern declared through 2025; a ninth — Ebola in the DRC — was declared in 2026.
+</p>
+<aside class="notes">
+<p>Nine declarations under the 2005 International Health Regulations. Notable for a law audience: the DG’s discretion, the absence of enforcement or verification powers, the 2024 IHR amendments, and the pandemic accord negotiations.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>© 2026 John M. Drake · CC BY-NC 4.0</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="uga-law-pandemic-planet_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

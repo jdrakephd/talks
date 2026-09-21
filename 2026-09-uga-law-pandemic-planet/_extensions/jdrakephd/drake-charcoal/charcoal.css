@@ -1,0 +1,92 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+/* ============================================================
+   CHARCOAL.CSS — Seminar palette
+   Warm charcoal with slate-blue accent. For working seminars.
+   Distinctive feel: relaxed, conversational — soft headings,
+   generous spacing, prominent blockquote bar.
+   ============================================================ */
+
+:root {
+  --bg:      #1f2024;
+  --bg-alt:  #ededea;
+  --fg:      #e8e6e1;
+  --fg-alt:  #1a1a1a;
+  --muted:   #9a9a95;
+  --accent:  #7a96b8;       /* slate blue */
+  --rule:    rgba(232, 230, 225, 0.16);
+}
+
+/* --- Softer, lighter headings — less "presentation", more conversation --- */
+.reveal h1,
+.reveal h2 {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.reveal h2 {
+  color: var(--accent);
+}
+
+/* --- Slightly larger body for readability in small rooms --- */
+.reveal {
+  font-size: 32px;
+}
+
+/* --- Prominent left-bar blockquote — the "whiteboard margin" --- */
+.reveal blockquote {
+  border-left-width: 4px;
+  border-left-color: var(--accent);
+  padding-left: 1.2em;
+  font-style: normal;
+  color: var(--muted);
+  font-size: 0.95em;
+}
+
+/* --- Code blocks: rounded, slightly more visible background --- */
+.reveal pre {
+  background: rgba(255, 255, 255, 0.07);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+}
+.reveal code {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+/* --- Title slide: understated, no fuss --- */
+.reveal #title-slide h1.title {
+  font-weight: 400;
+  font-size: 2.2em;
+}
+.reveal #title-slide .subtitle {
+  font-size: 1.0em;
+  color: var(--accent);
+  font-style: italic;
+}
+
+/* --- Divider: simple, cool-toned --- */
+.reveal section.divider h1 {
+  font-weight: 400;
+  font-size: 1.8em;
+  color: var(--accent);
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+/* --- Lists: wider spacing for discussion-style talks --- */
+.reveal li {
+  margin-bottom: 0.5em;
+}
+.reveal ul li::marker {
+  color: var(--accent);
+}
+
+/* --- Frosted caption: softer blur --- */
+.reveal .frosted {
+  background: rgba(31, 32, 36, 0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+}
