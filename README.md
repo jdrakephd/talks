@@ -3,10 +3,26 @@
 Public, rendered slide decks for John M. Drake, served via GitHub Pages at
 **https://jdrakephd.github.io/talks/**.
 
-Source `.qmd` files live in their respective (private) research repositories.
-This repo holds only the *rendered* output, as the research repos are not typically made public and the source is never duplicated here.
+Source `.qmd` files live in the private
+[`talks-src`](https://github.com/jdrakephd/talks-src) repo, or in a research
+repo when a talk belongs to one project (the UGA Law decks are in
+`pandemic-planet/talks/`). This repo holds only the *rendered* output; the
+source is never duplicated here.
 
-## Publish a new talk
+## Publish with `publish.sh` (preferred)
+
+From a clone of `talks-src`, with this repo cloned at `~/Desktop/Projects/talks`:
+
+```sh
+./publish.sh 2026-10-columbia-anticipating-resurgence          # stage for review
+./publish.sh 2026-10-columbia-anticipating-resurgence --push   # commit and push
+```
+
+It renders the deck, exports the PDF with Decktape, copies the rendered output
+into the dated folder here as `index.html`, and adds the deck's `listing.html`
+to the landing page. See the `talks-src` README for details.
+
+## Publish a new talk by hand
 
 1. In the private research repo, render the Quarto reveal deck as a
    self-contained folder:
