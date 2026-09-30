@@ -9,6 +9,34 @@ repo when a talk belongs to one project (the UGA Law decks are in
 `pandemic-planet/talks/`). This repo holds only the *rendered* output; the
 source is never duplicated here.
 
+## Every deck is fully packaged
+
+Each talk folder holds exactly two files:
+
+```
+<YYYY-MM-venue-topic>/
+  index.html                  # the deck, as ONE self-contained file
+  <venue-topic>.pdf           # Decktape export of the same deck
+```
+
+`index.html` must work when someone downloads it on its own and opens it
+offline. That means every figure, library, font and equation is embedded in
+the file, and nothing is loaded from a sibling folder or a CDN. Expect decks
+of 10–25 MB; GitHub warns above 50 MB and rejects files over 100 MB, so
+downsample oversized figures before rendering if a deck gets near that.
+
+Quarto's `embed-resources` does most of this, but not all of it. It inlines
+images, reveal.js and theme CSS, yet it always loads the math library (KaTeX
+or MathJax) at runtime, so equations break offline. `talks-src/embed-math.cjs`
+fixes that by pre-rendering every equation with KaTeX, removing the runtime
+loader and inlining KaTeX's CSS and fonts.
+
+Older talks predate this rule. `2026-08-esa-how-to-be-a-good-editor/` and
+`2026-09-uga-law-pandemic-planet/` still ship `_files/` and `figures/`
+alongside `index.html`, and `2026-07-esa-spatial-spread/` is a single file
+whose equations still load KaTeX from a CDN. Republish them with `publish.sh`
+to package them fully.
+
 ## Publish with `publish.sh` (preferred)
 
 From a clone of `talks-src`, with this repo cloned at `~/Desktop/Projects/talks`:
@@ -18,34 +46,44 @@ From a clone of `talks-src`, with this repo cloned at `~/Desktop/Projects/talks`
 ./publish.sh 2026-10-columbia-anticipating-resurgence --push   # commit and push
 ```
 
-It renders the deck, exports the PDF with Decktape, copies the rendered output
-into the dated folder here as `index.html`, and adds the deck's `listing.html`
-to the landing page. See the `talks-src` README for details.
+It renders the deck self-contained, embeds the math, exports the PDF with
+Decktape, replaces the talk's folder here with `index.html` and the PDF, and
+adds the deck's `listing.html` to the landing page. See the `talks-src`
+README for details.
 
 ## Publish a new talk by hand
 
-1. In the private research repo, render the Quarto reveal deck as a
-   self-contained folder:
+1. In the source repo, render the deck as one self-contained file:
 
    ```sh
-   quarto render slides.qmd --to revealjs
+   quarto render slides.qmd -M embed-resources:true
    ```
 
-   (If the deck references local images/assets, keep the generated
-   `slides_files/` folder alongside `slides.html`.)
+   If the deck has equations, also run
+   `node embed-math.cjs slides.html <path-to-katex-dir>` (from `talks-src`),
+   with the deck set to `html-math-method: {method: katex, url: "katex/"}`
+   and a local KaTeX copy in `katex/`.
 
-2. Copy the rendered output into a dated, slugged folder in this repo, named so
-   the URL reads well:
+2. Export the PDF with Decktape at the deck's slide size (Quarto's default is
+   1050×700):
+
+   ```sh
+   npx decktape reveal -s 1050x700 "file://$PWD/slides.html" venue-topic.pdf
+   ```
+
+3. Create the dated folder here and copy in just the two files:
 
    ```sh
    mkdir -p 2026-06-eds-age-agency-epidemics
-   cp -R /path/to/render/output/* 2026-06-eds-age-agency-epidemics/
-   # rename the deck's entry file to index.html so the folder URL loads it
-   mv 2026-06-eds-age-agency-epidemics/slides.html \
-      2026-06-eds-age-agency-epidemics/index.html
+   cp slides.html 2026-06-eds-age-agency-epidemics/index.html
+   cp venue-topic.pdf 2026-06-eds-age-agency-epidemics/
    ```
 
-3. Add a line to `index.html` (the landing page), commit, and push:
+4. Check the packaging: copy `index.html` alone into an empty folder, open it
+   with networking off, and confirm the figures and equations render.
+
+5. Add an entry at the top of the list in `index.html` (the landing page),
+   commit and push:
 
    ```sh
    git add -A && git commit -m "Add EDS 2026 keynote" && git push
@@ -57,8 +95,7 @@ to the landing page. See the `talks-src` README for details.
 ## Notes
 
 - `.nojekyll` is required: it stops GitHub Pages from running Jekyll, which
-  would otherwise drop folders and files whose names begin with `_` (Quarto and
-  reveal.js use several).
-- Prefer folder-per-talk over a single self-contained HTML when a deck has many
-  images; it keeps the repo readable and avoids multi-megabyte HTML files.
+  would otherwise drop files whose names begin with `_`.
+- Speaker notes are embedded in the deck and are public. Keep reminders
+  like `[CHECK …]` out of them; `publish.sh` refuses to run if any remain.
 - To retire a talk, delete its folder and its line in `index.html`.
